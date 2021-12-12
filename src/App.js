@@ -61,7 +61,7 @@ function App() {
     setStart(false);
   };
 
-  const shareUrl = "https://todolist-70ec0.web.app"
+  const shareUrl = "https://www.ourtodolist.io"
   const MSGtitle = "Sharable ToDo List"
 
   return (
