@@ -51,8 +51,17 @@ export default function DoList({name,listId}) {
 
     function deletList(e){
       e.preventDefault();
-      db.collection("todoList").doc(listId).delete();
+      db.collection(`todoList/${listId}/todos`) 
+      .get()
+      .then((res) => {
+        res.forEach((element) => {
+          element.ref.delete();
+          db.collection("todoList").doc(listId).delete();
+        });
+        db.collection("todoList").doc(listId).delete();
+      });
     }
+    // db.collection("todoList").doc(listId).delete();
 
     return (
         <div>

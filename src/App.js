@@ -136,13 +136,16 @@ function App() {
               <Button onClick={handleDialogClose}>Close</Button>
             </DialogActions>
         </Dialog>
-        <div className='container'>
+        <div >
+        <Grid container className='container'>
         {lists.map((list) => (
+          <Grid item>
           <div className='Lists'>
             <DoList name={list.listName} listId={list.id}/>
           </div>
-
+          </Grid>
             ))}
+        </Grid>
         </div>
     </div>
   );
