@@ -61,7 +61,7 @@ function App() {
     setStart(false);
   };
 
-  const shareUrl = "https://www.ourtodolist.io"
+  const shareUrl = "https://todolist-70ec0.web.app"
   const MSGtitle = "Sharable ToDo List"
 
   return (
@@ -136,13 +136,16 @@ function App() {
               <Button onClick={handleDialogClose}>Close</Button>
             </DialogActions>
         </Dialog>
-        <div className='container'>
+        <div >
+        <Grid container className='container'>
         {lists.map((list) => (
+          <Grid item>
           <div className='Lists'>
             <DoList name={list.listName} listId={list.id}/>
           </div>
-
+          </Grid>
             ))}
+        </Grid>
         </div>
     </div>
   );
