@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="351" viewBox="0 0 250 351">
+  <g id="Group_3" data-name="Group 3" transform="translate(-97 -324)">
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(97 324)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4">
+      <rect width="250" height="351" stroke="none"/>
+      <rect x="2" y="2" width="246" height="347" fill="none"/>
+    </g>
+    <line id="Line_3" data-name="Line 3" x2="203" transform="translate(130.625 360)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <line id="Line_4" data-name="Line 4" x2="203" transform="translate(130.625 396)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <line id="Line_5" data-name="Line 5" x2="203" transform="translate(130.625 432)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <line id="Line_6" data-name="Line 6" x2="203" transform="translate(130.875 468)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <line id="Line_7" data-name="Line 7" x2="203" transform="translate(130.625 504)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <line id="Line_8" data-name="Line 8" x2="203" transform="translate(130.625 540)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <line id="Line_9" data-name="Line 9" x2="203" transform="translate(130.875 576)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <line id="Line_10" data-name="Line 10" x2="203" transform="translate(130.625 612)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <line id="Line_11" data-name="Line 11" x2="203" transform="translate(130.875 648)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="4"/>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(110.125 346)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(110.125 382)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(110.125 418)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(110.125 454)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(110.125 490)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+    <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(110.125 526)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+    <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(110.125 562)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+    <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(110.125 598)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+    <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(110.125 634)" fill="none" stroke="#484444" stroke-linecap="square" stroke-width="3">
+      <rect width="15" height="15" stroke="none"/>
+      <rect x="1.5" y="1.5" width="12" height="12" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -14,10 +14,12 @@ export default function DoList({name,listId}) {
   const [todoList, setTodos] = useState([]);
   const [todoText, setTodoText] = useState("");
 
+
     useEffect(() => {
       getData();
     }, []);
     
+
 
 
     function getData() {
@@ -51,13 +53,23 @@ export default function DoList({name,listId}) {
 
     function deletList(e){
       e.preventDefault();
-      db.collection("todoList").doc(listId).delete();
+     	db.collection(`todoList/${listId}/todos`) 
+	        .get()
+	        .then((res) => {
+	          res.forEach((element) => {
+            element.ref.delete();
+            db.collection("todoList").doc(listId).delete();
+	          });
+            db.collection("todoList").doc(listId).delete();
+        })
+
+      // db.collection("todoList").doc(listId).delete();
     }
 
     return (
         <div>
             <form className='centered'>        
-            <label style={{color:"white",fontSize:"1.3rem",padding:"0",marginBottom:"10px"}}>{name}</label>   
+            <label style={{color:"#333333",fontSize:"1.3rem",padding:"0",marginBottom:"10px"}}>{name}</label>   
               <TextField 
                 id="filled-basic" 
                 value={todoText} 
@@ -80,8 +92,7 @@ export default function DoList({name,listId}) {
               loading={loading}
               loadingIndicator="Loading..."
               startIcon={<NoteAddIcon />} 
-              style={{maxWidth:"10rem", width:"90vw",marginTop:"10px"}} 
-              color="success" 
+              style={{maxWidth:"10rem", width:"90vw",marginTop:"10px",backgroundColor:"#333399"}} 
               fullWidth>New Todo</LoadingButton>
               <Button 
               type="submit" 
@@ -89,14 +100,13 @@ export default function DoList({name,listId}) {
               variant="contained"
               endIcon={<DeleteForeverIcon />}  
               style={{maxWidth:"9rem", width:"90vw",marginTop:"10px"}} 
-              color="primary" 
+              color="error" 
               fullWidth>Delet List</Button>
               </Stack>
             </form>
             {todoList.map((todo) => (
               <DoItem todo={todo.todo} ischecked={todo.ischecked} time={todo.timestamp} id={todo.id} listId={listId}/>
             ))}
-
       </div>
     )
 }

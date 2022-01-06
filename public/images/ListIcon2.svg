@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="31" viewBox="0 0 24 31">
+  <g id="Group_4" data-name="Group 4" transform="translate(-156.348 -114.808)">
+    <g id="Rectangle_13" data-name="Rectangle 13" transform="translate(156.348 114.808)" fill="none" stroke="#923232" stroke-width="2">
+      <rect width="24" height="31" stroke="none"/>
+      <rect x="1" y="1" width="22" height="29" fill="none"/>
+    </g>
+    <line id="Line_12" data-name="Line 12" x2="15.261" transform="translate(162.587 121.004)" fill="none" stroke="#923232" stroke-width="2"/>
+    <line id="Line_13" data-name="Line 13" x2="15.261" transform="translate(162.587 127.203)" fill="none" stroke="#923232" stroke-width="2"/>
+    <line id="Line_14" data-name="Line 14" x2="15.261" transform="translate(162.587 132.908)" fill="none" stroke="#923232" stroke-width="2"/>
+    <line id="Line_15" data-name="Line 15" x2="15.261" transform="translate(162.587 138.613)" fill="none" stroke="#923232" stroke-width="2"/>
+    <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(159.348 119.808)" fill="none" stroke="#923232" stroke-width="0.5">
+      <rect width="2" height="2" stroke="none"/>
+      <rect x="0.25" y="0.25" width="1.5" height="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_15" data-name="Rectangle 15" transform="translate(159.348 125.808)" fill="none" stroke="#923232" stroke-width="0.5">
+      <rect width="2" height="2" stroke="none"/>
+      <rect x="0.25" y="0.25" width="1.5" height="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_16" data-name="Rectangle 16" transform="translate(159.348 131.808)" fill="none" stroke="#923232" stroke-width="0.5">
+      <rect width="2" height="2" stroke="none"/>
+      <rect x="0.25" y="0.25" width="1.5" height="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(159.348 137.808)" fill="none" stroke="#923232" stroke-width="0.5">
+      <rect width="2" height="2" stroke="none"/>
+      <rect x="0.25" y="0.25" width="1.5" height="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>

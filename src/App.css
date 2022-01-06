@@ -7,31 +7,21 @@
 }
 
 .App h1 {
-  color: brown;
-}
-
-.coco {
-  padding: 20px;
+  color: #800000;
 }
 
 .container {
-  width: 97%;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  overflow: scroll;
-  padding: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: #052952 #b1a4a4;
-  margin-top: 10px;
+  justify-content: center;
 }
 
 .Lists {
-  background-color: grey;
   padding: 10px;
   margin-right: 5px;
-  border: 2px solid rgb(69, 73, 78);
+  margin-top: 10px;
   border-radius: 10px;
+  padding: 16px;
 }
 
 .centered {

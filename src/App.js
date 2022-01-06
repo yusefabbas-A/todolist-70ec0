@@ -13,20 +13,22 @@ import {FacebookShareButton,
   LinkedinIcon} from "react-share";
 import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
 import ShareIcon from '@mui/icons-material/Share';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 
 function App() {
   const [lists, setlists] = useState([]);
   const [listName, setListName] = useState("");
   const [open, setOpen] = React.useState(false);
   const [start, setStart] = React.useState(false);
-
+  const [hex, setHex] = useState("");
 
 
   useEffect(() => {
     getListsData();
+    randomHex();
   }, []);
 
-  function getListsData() {
+  const getListsData = () => {
     db.collection("todoList").onSnapshot(function (querySnapshot) {
       setlists(querySnapshot.docs.map((doc) => ({
         id: doc.id,
@@ -35,13 +37,18 @@ function App() {
     })
   }
 
-  function createlist(e) {
+  const createlist=(e) =>{
     e.preventDefault();
     db.collection("todoList").add({
       listName:listName,
     });
     setListName("");
     setOpen(false);
+  }
+
+  const randomHex=()=>{
+    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    setHex(randomColor);
   }
 
   const handleClickOpen = () => {
@@ -61,24 +68,24 @@ function App() {
     setStart(false);
   };
 
-  const shareUrl = "https://www.ourtodolist.io"
+  const shareUrl = "https://todolist-70ec0.web.app"
   const MSGtitle = "Sharable ToDo List"
 
   return (
     <div className="App">
-        <h1>Our ToDot List</h1>
+        <h1> <img src="../../images/ListIcon2.svg" alt="" /> TODLIT</h1>
         <Stack direction="row" spacing={1}>
           <Button 
+          style={{backgroundColor:"#333399"}}
           endIcon={<PlaylistAddIcon />} 
           onClick={handleClickOpen} 
           variant="contained" 
-          color="primary" 
           >Add List</Button>
           <Button 
+          style={{backgroundColor:"#333399"}}
           endIcon={<ShareIcon />}
           onClick={handleShareDialog}  
-          variant="contained" 
-          color="primary" 
+          variant="contained"  
           >Share List</Button>
         </Stack>
 
@@ -136,14 +143,16 @@ function App() {
               <Button onClick={handleDialogClose}>Close</Button>
             </DialogActions>
         </Dialog>
-        <div className='container'>
-        {lists.map((list) => (
-          <div className='Lists'>
-            <DoList name={list.listName} listId={list.id}/>
-          </div>
 
-            ))}
-        </div>
+          <Grid container className='container'>
+            {lists.map((list) => (
+              <Grid item >
+              <div className='Lists'  style={{backgroundColor:"#cccccc"}}>
+                <DoList name={list.listName} listId={list.id}/>
+              </div>
+              </Grid>
+                ))}
+          </Grid>
     </div>
   );
 }
